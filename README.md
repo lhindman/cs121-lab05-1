@@ -34,7 +34,7 @@ Your quick pick is: XX-XX-XX-XX-XX / XX
 ```
 
 ### Program Design
-While it is possible to implement this entire program in the main() method, it is a good practice to organize related sections of code into separate methods making the overall code easier to read and to allow code to be reused more easily. The main() method will implemented in a class called QuickPick. The following static methods should be implemented in a seperate call called LabUtility. Use the javadoc comments below to implement the expected functionality of each static method.
+While it is possible to implement this entire program in the main() method, it is a good practice to organize related sections of code into separate methods making the overall code easier to read and to allow code to be reused more easily. The main() method will implemented in a class called QuickPick. The following static methods should be implemented in a seperate class called LabUtility. Use the javadoc comments below to implement the expected functionality of each static method.
 
 ```
 public static String getName(Scanner kbd) {...}
