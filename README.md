@@ -1,10 +1,6 @@
-# Lab05 Guide
+# Module 5 Lab Guide (part 1)
 ## Getting Started
 [Lab Introduction Video](https://youtu.be/4m5AwuwMg6E)  
-
-- Please clone the [Mod05 Code Examples](https://github.com/lhindman/cs121-mod05-examples.git).
-- Please watch the [M.A.S.H. and Gradebook Activity Overview Videos](https://www.youtube.com/playlist?list=PLbxWwkW_BhyBcxkgU0tQpIh_YdCUVFC52).  
-
 
 ### Code Style Requirements
 Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQBKkApnNAzzgwOSvRM03DmhYWx5yEfecT2WXfjI/edit?usp=sharing) and apply it in all lab activities and projects this semester. Coding Style will assessed as part of your lab and project grades.
@@ -14,47 +10,52 @@ Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQB
 - Code must run without errors or warnings on safe-path and edge test cases
 - More to come as we learn about input validation and exception handling
 
-## Activity 1 - CoinFlip
+## Lab Warmup - QuickPick (Required)
 ### Problem Description
 
-Write a program that simulates flipping a coin to make decisions. The input is how many decisions are needed, and the output is either heads or tails. Assume the input is a value greater than 0.
+Write a program that will randomly generate lottery ticket numbers. You code will generate five numbers in the range of 1 through 69 and a single power pick number in the range of 1 through 26. The numbers will be generated randomly WITH replacement, meaning that the same number can appear multiple times on the ticket. When printed to the console, each number should be zero-padded to two places and separate from each other with hyphens. The power pick number should be zero-padded to two places separated from the first five numbers with spaces and a forward slash. In addition, your program should prompt the user for their name and for a seed value to initialize the Random object so that the ticket numbers are reproducible.
 
-Ex: If the input is:
+#### Expected Program Output (with sample user input)
 ```
-3
+Please enter your name: Luke
+Please enter a seed value: 123
+
+Hello Luke,
+Your quick pick is: XX-XX-XX-XX-XX / XX
 ```
-the output is:
+
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter a seed value: 76281564
+
+Hello Luke,
+Your quick pick is: XX-XX-XX-XX-XX / XX
+```
+
+### Program Design
+While it is possible to implement this entire program in the main() method, it is a good practice to organize related sections of code into separate methods making the overall code easier to read and to allow code to be reused more easily. The main() method will implemented in a class called QuickPick. The following static methods should be implemented in a seperate call called LabUtility. Use the javadoc comments below to implement the expected functionality of each static method.
 
 ```
-tails
-heads
-tails
+public static String getName(Scanner kbd) {...}
 ```
-For reproducibility needed for auto-grading, seed the program with a value of 2. In a real program, you would seed with the current time. In that case, every program's output would be different, which is what is desired but can't be auto-graded. 
 
-Note: A common student mistake is to create an instance of Random before each call to rand.nextInt(). But seeding should only be done once, at the start of the program, after which rand.nextInt() can be called any number of times. 
-
-The program must implement a method named *headsOrTails* that will perform the random selection. The javadoc comment below provides details on the expected behavior of this method as well as the required header (signature) of the *headsOrTails* method.
 ```
-/**
- * Randomly pick 0 or 1 using the specified Random object and use them to 
- *    represent "heads" or "tails" respectively. Assume the value 0 represents
- *    "heads" and the value 1 represents "tails."  Return a String that 
- *    contains the randomly selected word.
- *
- * @param rand Reference to Random object to use for calls to nextInt()
- * @return String containing the randomly selected "heads" or "tails"
- */
+public static long getSeed(Scanner kbd) {...}
+```
 
- public static String headsOrTails(Random rand)
- ``` 
+```
+public static void generateTicket(Random rnd) {...}
+```
 
+
+```
 
 ### Implementation Guide
-1. Expand the folder named A1-CoinFlip and create a new file named CoinFlip.java
-2. Design a program to satisfy the requirements in the Problem Description and enter the program code in CoinFlip.java
-3. Test the program using the run link above the main method. Carefully think about each of the different cases you'll need to test for to verify that the application is functioning properly.
-4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
+1. Expand the folder named QuickPick and open both QuickPick.java and LabUtility.java
+2. Design a program to satisfy the requirements in the Problem Description and Program Design sections
+3. Test the program using the sample user input and compare against the expected output. Carefully think about each of the different cases you'll need to test for to verify that the application is functioning properly.
+4. Commit the changes to your local repository with a message stating that Lab Warmup is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
 ## Activity 2 - CoinFlip (revisited)
