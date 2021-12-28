@@ -48,9 +48,6 @@ public static long getSeed(Scanner kbd) {...}
 public static void generateTicket(Random rnd) {...}
 ```
 
-
-```
-
 ### Implementation Guide
 1. Expand the folder named QuickPick and open both QuickPick.java and LabUtility.java
 2. Design a program to satisfy the requirements in the Problem Description and Program Design sections
