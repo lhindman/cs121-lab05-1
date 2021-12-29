@@ -50,7 +50,7 @@ public static String getName(Scanner kbd) {...}
 
 ```
 /**
- * Prompot the user to enter a seed value then user the provided 
+ * Prompt the user to enter a seed value then user the provided 
  *     Scanner object to read the user input as a long value. If the
  *     user enters a value that cannot be read as a long value, display
  *     an error message and prompt the user to enter the seed value
