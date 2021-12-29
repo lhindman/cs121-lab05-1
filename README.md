@@ -89,7 +89,7 @@ public static long getSeed(Scanner kbd) {...}
  * 
  * @param rnd Random object to use for ticket generation
  */
-public static void generateTicket(Random rnd) {...}
+public static void printTicket(Random rnd) {...}
 ```
 
 ### Implementation Guide
