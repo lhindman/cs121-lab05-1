@@ -13,7 +13,7 @@ Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQB
 ## Lab Warmup - QuickPick (Required)
 ### Problem Description
 
-Write a program that will randomly generate lottery ticket numbers. You code will generate five numbers in the range of 1 through 69 and a single power pick number in the range of 1 through 26. The numbers will be generated randomly WITH replacement, meaning that the same number can appear multiple times on the ticket. When printed to the console, each number should be zero-padded to two places and separate from each other with hyphens. The power pick number should be zero-padded to two places separated from the first five numbers with spaces and a forward slash. In addition, your program should prompt the user for their name and for a seed value to initialize the Random object so that the ticket numbers are reproducible.
+Write a program that will randomly generate lottery ticket numbers. You code will generate five numbers in the range of 1 through 69 and a single power pick number in the range of 1 through 26. The numbers will be generated randomly WITH replacement, meaning that the same number can appear multiple times on the ticket. When printed to the console, each number should be zero-padded to two places and separated from each other with hyphens. The power pick number should be zero-padded to two places and separated from the first five numbers with spaces and a forward slash. In addition, your program should prompt the user for their name and for a seed value to initialize the Random object so that the ticket numbers are reproducible.
 
 #### Expected Program Output (with sample user input)
 ```
