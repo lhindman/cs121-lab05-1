@@ -102,7 +102,7 @@ public static void printTicket(Random rnd) {...}
 ## Lab Activity 1 - HousingCrunch (Required)
 ### Problem Description
 
-By now most folks are aware of the housing crisis in Boise, Idaho. Even decisions as to whether to buy a house or an apartment have become difficult. To help address this issue, write a program that help folks make this decision. This program will prompt the user for their name and a seed value (for reproducibility), then display advice on whether they should purchase a **Mansion**, **Apartment**, **Shack** or **House**.  :) 
+By now most folks are aware of the housing crisis in Boise, Idaho. Even decisions as to whether to buy a house or an apartment have become difficult. To help address this issue, write a program to help folks make this decision. This program will prompt the user for their name and a seed value (for reproducibility), then display advice on whether they should purchase a **Mansion**, **Apartment**, **Shack** or **House**.  :) 
 
 #### Expected Program Output (with sample user input)
 ```
