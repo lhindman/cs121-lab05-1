@@ -67,11 +67,13 @@ public static String getName(Scanner kbd) {...}
 ```
 /**
  * Prompt the user to enter a seed value then user the provided 
- *     Scanner object to read the user input as a long value. If the
- *     user enters a value that cannot be read as a long value, display
+ *     Scanner object to read the entire line of user input 
+ *     as a String. Use the Long.parseLong() static method to 
+ *     convert the String to a long value. If the user enters a 
+ *     value that cannot be parsed as a long value, display
  *     an error message and prompt the user to enter the seed value
  *     again. Once a long value has been successfully read, return 
- *     this value to the caller
+ *     this value to the caller.
  * @param kbd Scanner object bound to System.in
  * @return long value to be used as Random seed
  */
