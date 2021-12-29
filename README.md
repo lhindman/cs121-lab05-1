@@ -110,22 +110,39 @@ Please enter your name: Luke
 Please enter a seed value: 123
 
 Hello Luke,
-You should buy a XXXXXXXXX
+You should buy a shack.
 ```
 
 #### Expected Program Output (with sample user input)
 ```
-Please enter your name: Luke
+Please enter your name: Luke   
 Please enter a seed value: 9853482
 
 Hello Luke,
-You should buy a XXXXXXXXX
+You should buy a apartment.
 ```
+
+The example below shows the expected error handling behavior when invalid seed values are entered. Notice that you get this error handling behavior for free since it was integrated into the getSeed static method. This is a great example of how methods support code reuse.  
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter a seed value: bob
+Error: Please enter only whole numbers
+
+Please enter a seed value: 12.3
+Error: Please enter only whole numbers
+
+Please enter a seed value: 123
+
+Hello Luke,
+You should buy a shack.
+```
+
 
 ### Program Design
 Please copy LabUtility.java from the Lab Warmup into the HousingCrunch folder.  This will allow reuse of both the getName() and getSeed() static methods.  
 
-Please add a main() method to the class in HousingCrunch.java.  Declare and instantiate an ArrayList of Strings named homeList and add each of the following options to the list in the order as shown below:
+In the main() method in the HousingCrunch class, please declare and instantiate an ArrayList of Strings named homeList and add each of the following housing options to the ArrayList in the order as shown below:
 - mansion
 - apartment
 - shack
