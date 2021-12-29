@@ -21,7 +21,7 @@ Please enter your name: Luke
 Please enter a seed value: 123
 
 Hello Luke,
-Your quick pick is: XX-XX-XX-XX-XX / XX
+Your quick pick is: 48-12-15-36-64 / 08
 ```
 
 #### Expected Program Output (with sample user input)
@@ -30,7 +30,23 @@ Please enter your name: Luke
 Please enter a seed value: 76281564
 
 Hello Luke,
-Your quick pick is: XX-XX-XX-XX-XX / XX
+Your quick pick is: 66-04-27-56-24 / 10
+```
+
+The example below shows the expected error handling behavior when invalid seed values are entered.  
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter a seed value: bob
+Error: Please enter only whole numbers
+
+Please enter a seed value: 12.3
+Error: Please enter only whole numbers
+
+Please enter a seed value: 123
+
+Hello Luke,
+Your quick pick is: 48-12-15-36-64 / 08
 ```
 
 ### Program Design
