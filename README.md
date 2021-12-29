@@ -63,6 +63,16 @@ public static long getSeed(Scanner kbd) {...}
 ```
 
 ```
+/**
+ * Use the provided Random object to generate five integer values in the range
+ *     of 1 - 69 (inclusive) followed by one number in the range of 1 - 26 
+ *     (inclusive). Print the resulting lottery ticket to the console using
+ *     the following format pattern:
+ * 
+ *     "%02d-%02d-%02d-%02d-%02d / %02d\n"
+ * 
+ * @param rnd Random object to use for ticket generation
+ */
 public static void generateTicket(Random rnd) {...}
 ```
 
