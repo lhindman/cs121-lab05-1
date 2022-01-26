@@ -1,7 +1,7 @@
 ![CS121 Banner](images/CS121-BANNER.svg)
 # Module 5 Lab Guide (part 1)
 ## Getting Started
-[Lab Introduction Video](https://youtu.be/4m5AwuwMg6E)  
+[Lab Introduction Video](https://boisestate.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=212f226d-e5a1-421e-852b-ae2801867bba&start=0)  
 
 ### Code Style Requirements
 Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQBKkApnNAzzgwOSvRM03DmhYWx5yEfecT2WXfjI/edit?usp=sharing) and apply it in all lab activities and projects this semester. Coding Style will assessed as part of your lab and project grades.
