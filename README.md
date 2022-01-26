@@ -1,6 +1,5 @@
 ![CS121 Banner](images/CS121-BANNER.svg)
 # Module 5 Lab Guide (part 1)
-## Getting Started
 [Lab Introduction Video](https://boisestate.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=212f226d-e5a1-421e-852b-ae2801867bba&start=0)  
 
 ### Code Style Requirements
